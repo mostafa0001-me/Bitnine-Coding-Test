@@ -1,0 +1,177 @@
+# Fibonacci Sequence Generator
+
+The answer for question 1 contains an implementation of a Fibonacci sequence generator in C using a predefined `Node` struct. The `fibo` function provided in the code returns a dynamically allocated array of `Node` pointers representing the Fibonacci sequence up to the given index `n`.
+
+## Development Environment
+
+To compile and run the source code, you need the following:
+
+- C compiler (e.g., GCC, Clang)
+- Standard C library
+- Predefined `Node` struct and function pointers
+
+## Compilation
+
+Follow the steps below to compile the source code:
+
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing the source code file (e.g., `fibonacci.c`).
+
+   ```
+   cd /path/to/source/code
+   ```
+
+3. Use the appropriate command to compile the code. For example, using GCC:
+
+   ```
+   gcc -o fibonacci fibonacci.c
+   ```
+
+   This command will generate an executable file named `fibonacci` in the same directory.
+
+## Execution
+
+After compiling the source code, you can run the program to generate the Fibonacci sequence. The program takes a single command-line argument specifying the index `n` up to which you want to generate the sequence.
+
+To execute the program, follow these steps:
+
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing the compiled executable file.
+
+   ```
+   cd /path/to/compiled/executable
+   ```
+
+3. Run the program and provide the index `n` as a command-line argument. For example, to generate the Fibonacci sequence up to index 10:
+
+   ```
+   ./fibonacci 10
+   ```
+
+   The program will calculate the Fibonacci sequence and display the result on the console.
+
+## Note
+
+The provided code snippet assumes the existence of the following components:
+
+- A `makeFunc` function that creates a `Node` with the given parameters and function pointer.
+- A main function that passes to the fibo function the needed paramaters and then store the return value to be printed or any other needed operation.
+- The fibo function is created using the dynamic programming approach.
+
+Please ensure that these components are defined and included in your implementation to avoid compilation errors.
+
+
+# Fibonacci Sequence Calculator
+
+The answer for question 2 contains multiple implementations of a Fibonacci sequence calculator in C++. The following functions are available:
+
+- `RecursiveFib`: Calculates the nth number of the Fibonacci sequence using a recursive approach.
+- `DPFib`: Calculates the nth number of the Fibonacci sequence using dynamic programming.
+- `IterativeFibo`: Calculates the nth number of the Fibonacci sequence using an iterative approach.
+- `Binetfib`: Calculates the nth number of the Fibonacci sequence using Binet's formula.
+
+## Development Environment
+
+To compile and run the source code, you need the following:
+
+- C compiler
+- Standard C library
+
+## Compilation
+
+Follow the steps below to compile the source code:
+
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing the source code file (e.g., `fibonacci.cpp`).
+
+   ```
+   cd /path/to/source/code
+   ```
+
+3. Use the appropriate command to compile the code. For example, using GCC:
+
+   ```
+   g++ -o fibonacci fibonacci.cpp
+   ```
+
+   This command will generate an executable file named `fibonacci` in the same directory.
+
+## Execution
+
+After compiling the source code, you can run the program to calculate the nth number of the Fibonacci sequence using different approaches.
+
+To execute the program, follow these steps:
+
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing the compiled executable file.
+
+   ```
+   cd /path/to/compiled/executable
+   ```
+
+3. Run the program and provide the desired approach and the value of n as command-line arguments. For example, to calculate the 10th Fibonacci number using the recursive approach:
+
+   ```
+   ./fibonacci recursive 10
+   ```
+
+   Replace `recursive` with `dp`, `iterative`, or `binet` to use the corresponding approach.
+
+   The program will calculate the nth Fibonacci number using the specified approach and display the result on the console.
+
+## Examples
+
+Here are some examples of how to compile and run the program:
+
+1. Compile the source code:
+
+   ```
+   g++ -o fibonacci fibonacci.cpp
+   ```
+
+2. Run the program with the recursive approach and calculate the 10th Fibonacci number:
+
+   ```
+   ./fibonacci recursive 10
+   ```
+
+   Output:
+   ```
+   The 10th Fibonacci number using the recursive approach is: 55
+   ```
+
+3. Run the program with the dynamic programming approach and calculate the 20th Fibonacci number:
+
+   ```
+   ./fibonacci dp 20
+   ```
+
+   Output:
+   ```
+   The 20th Fibonacci number using the dynamic programming approach is: 6765
+   ```
+
+4. Run the program with the iterative approach and calculate the 30th Fibonacci number:
+
+   ```
+   ./fibonacci iterative 30
+   ```
+
+   Output:
+   ```
+   The 30th Fibonacci number using the iterative approach is: 832040
+   ```
+
+5. Run the program with Binet's formula and calculate the 15th Fibonacci number:
+
+   ```
+   ./fibonacci binet 15
+   ```
+
+   Output:
+   ```
+   The 15th Fibonacci number using Binet's formula is: 610
+   ```
+
+Please note that for large values of `n`, the recursive approach may take significant time to compute the Fibonacci number due to its exponential time complexity and the function using the Banit formula might not provide accurate answers.
+Also note that to run the program you need to include a call to the functions in main function and use the returned value in whatever operation you want.
